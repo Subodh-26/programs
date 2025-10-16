@@ -128,10 +128,12 @@ class BattleTest {
 
         while (first.isAlive() && second.isAlive()) {
             first.attack(second);
-            if (!second.isAlive()) break;
+            if (!second.isAlive())
+                break;
 
             second.attack(first);
-            if (!first.isAlive()) break;
+            if (!first.isAlive())
+                break;
             System.out.println("-----------------------------");
         }
 
